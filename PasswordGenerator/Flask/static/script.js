@@ -18,4 +18,10 @@ function generatePassword() {
     }
 
     document.getElementById("result").value = password;
+
+    // Update password strength indicator bar
+    var strengthBar = document.getElementById("strengthBar");
+    var strengthPercentage = (length / 50) * 100; // Assuming maximum password length is 50
+    strengthBar.style.width = strengthPercentage + "%";
+    strengthBar.setAttribute("aria-valuenow", strengthPercentage);
 }

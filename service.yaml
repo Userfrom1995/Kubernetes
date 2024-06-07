@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: passwordgenerator
+spec:
+  type: LoadBalancer
+  selector:
+    app: passwordgenerator
+  ports:
+  - port: 80
+    targetPort: 5000

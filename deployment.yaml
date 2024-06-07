@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: passwordgenerator
+spec:
+  replicas: 5
+  selector:
+    matchLabels:
+      app: passwordgenerator
+  template:
+    metadata:
+      labels:
+        app: passwordgenerator
+    spec:
+      containers:
+      - name: passwordgenerator
+        image: user1995/passwordgenerator2
+        resources:
+          limits:
+            memory: "1000Mi"
+            cpu: "500m"
+        ports:
+        - containerPort: 5000
