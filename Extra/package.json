@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "node": "^20.14.0",
     "puppeteer": "^22.10.0"
   }
 }

@@ -64,8 +64,8 @@ async function takeScreenshotsOfLinks(url, outputDirectory) {
 }
 
 // Example usage:
-const url = 'http://192.168.49.2:30244';
-const outputDirectory = './screenshots1';
+const url = 'http://192.168.49.2:32436';
+const outputDirectory = './screenshots2';
 
 // Create the output directory if it doesn't exist
 if (!fs.existsSync(outputDirectory)) {
